@@ -38,3 +38,10 @@ p {
   border-radius: 0.5rem;
   margin-top:0
 }
+.highmetric_link{
+  color:#ff664d;
+  text-decoration: none;
+}
+.highmetric_link:hover{
+  text-decoration: underline;
+}

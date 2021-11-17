@@ -1,0 +1,57 @@
+@media (min-width: 200px) and (max-width: 480px) {
+ 
+ .cert-image{
+      width: 80vw;
+}
+}
+
+
+.cert-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    margin-bottom: 3rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .cert-title {
+    color: white;
+    text-decoration: underline;
+  
+    background-color: black;
+    font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  }
+.cert-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cert-colapse {
+    position: relative;
+    float:left;
+    transform: scale(2);
+    cursor: pointer;
+
+  }
+  .cert-subtitle{
+    color: white;
+    
+    background-color: black;
+    padding-bottom: 8px;
+    width: 100%;
+    font-size: large;
+  }
+  .cert-text {
+    bottom: 0;
+    outline: thick;
+    
+    padding: 10px;
+    font-size: larger;
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden;
+    
+    border-radius: 4px;
+    background-color: black;
+  }

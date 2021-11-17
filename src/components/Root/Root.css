@@ -118,6 +118,7 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 5;
+    cursor: pointer;
   }
   body #subtitle {
     position: absolute;
@@ -207,6 +208,7 @@
     z-index: 5;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
   }
   body #subtitle {
     position: absolute;
@@ -276,6 +278,7 @@
   font-size: x-large;
 
 }
+
 .introSlide {
   opacity: 1;
   background-color: black;
@@ -355,6 +358,10 @@
   vertical-align: middle;
   display: flex;
   flex-wrap: wrap;
+}
+#certcontainer {
+
+
 }
 @keyframes floating {
   0% {

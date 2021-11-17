@@ -52,7 +52,7 @@ class ThreeDScene extends React.Component {
 
     const fillLight = new THREE.PointLight(0x0ee3ff, 0.5, 20);
     fillLight.layers.enable(OCCLUSION_LAYER);
-    fillLight.position.set(0, 3, 3);
+    fillLight.position.set(0, 0.55, 1.5);
     mainScene.add(fillLight);
 
     const keyLight = new THREE.PointLight(0x00a698, 2, 2);
