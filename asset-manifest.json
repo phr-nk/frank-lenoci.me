@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.65ea5321.chunk.css",
-    "main.js": "/static/js/main.3f626f0a.chunk.js",
-    "main.js.map": "/static/js/main.3f626f0a.chunk.js.map",
+    "main.css": "/static/css/main.42baef6e.chunk.css",
+    "main.js": "/static/js/main.18b78e46.chunk.js",
+    "main.js.map": "/static/js/main.18b78e46.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5c3ded2a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5c3ded2a.js.map",
-    "static/js/2.463c6fca.chunk.js": "/static/js/2.463c6fca.chunk.js",
-    "static/js/2.463c6fca.chunk.js.map": "/static/js/2.463c6fca.chunk.js.map",
+    "static/js/2.7c8de983.chunk.js": "/static/js/2.7c8de983.chunk.js",
+    "static/js/2.7c8de983.chunk.js.map": "/static/js/2.7c8de983.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.00b2a4dbc7be211b0cdb72252df4e2ed.js": "/precache-manifest.00b2a4dbc7be211b0cdb72252df4e2ed.js",
+    "precache-manifest.5e46e56e087b401c152df0a048b41f98.js": "/precache-manifest.5e46e56e087b401c152df0a048b41f98.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.65ea5321.chunk.css.map": "/static/css/main.65ea5321.chunk.css.map",
-    "static/js/2.463c6fca.chunk.js.LICENSE.txt": "/static/js/2.463c6fca.chunk.js.LICENSE.txt",
+    "static/css/main.42baef6e.chunk.css.map": "/static/css/main.42baef6e.chunk.css.map",
+    "static/js/2.7c8de983.chunk.js.LICENSE.txt": "/static/js/2.7c8de983.chunk.js.LICENSE.txt",
     "static/media/binary.jpg": "/static/media/binary.9cc3c786.jpg",
-    "static/media/face.png": "/static/media/face.620abc4e.png",
     "static/media/github_icon.png": "/static/media/github_icon.31b44d61.png",
     "static/media/gmail_icon.png": "/static/media/gmail_icon.6e2e7e64.png",
     "static/media/index.css": "/static/media/hacked-kerx-webfont.a3554bee.woff2",
-    "static/media/linkedin_icon.png": "/static/media/linkedin_icon.8b0cf889.png",
-    "static/media/updated_resume_8_2020.pdf": "/static/media/updated_resume_8_2020.a1785f04.pdf"
+    "static/media/linkedin_icon.png": "/static/media/linkedin_icon.8b0cf889.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5c3ded2a.js",
-    "static/js/2.463c6fca.chunk.js",
-    "static/css/main.65ea5321.chunk.css",
-    "static/js/main.3f626f0a.chunk.js"
+    "static/js/2.7c8de983.chunk.js",
+    "static/css/main.42baef6e.chunk.css",
+    "static/js/main.18b78e46.chunk.js"
   ]
 }
