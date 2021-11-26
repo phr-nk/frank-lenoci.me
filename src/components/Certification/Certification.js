@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Certification.css";
 
 class Certification extends React.Component {
@@ -29,7 +28,11 @@ class Certification extends React.Component {
           </div>
         </div>
         {this.state.open ? (
-          <img className="cert-image" src={this.props.picture}></img>
+          <img
+            alt="certification"
+            className="cert-image"
+            src={this.props.picture}
+          ></img>
         ) : null}
       </div>
     );

@@ -1,8 +1,6 @@
 import React from "react";
 import "./About.css";
 
-var face = require("../../assets/face.png");
-
 class About extends React.Component {
   render() {
     return (

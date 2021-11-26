@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import App from "./App";
-
+localStorage.setItem("loadState", true);
 ReactDOM.render(
   <div>
     <App />

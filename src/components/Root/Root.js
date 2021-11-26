@@ -6,14 +6,11 @@ import Fade from "react-reveal/Fade";
 import About from "../About/About";
 import Project from "../Project/Project";
 import Certification from "../Certification/Certification";
-import { isMobile } from "react-device-detect";
 import Contact from "../Contact/Contact";
-
 import fetchProjects from "../../api/apiProjects";
 import fetchCerts from "../../api/apiCerts";
 
 var codeIcon = require("../../assets/icons/code-64.png");
-var pdf = require("../../assets/updated_resume_8_2020.pdf");
 var default_picture = require("../../assets/binary.jpg");
 
 function vh(v) {
@@ -23,7 +20,6 @@ function vh(v) {
   );
   return (v * h) / 100;
 }
-
 class Root extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +28,7 @@ class Root extends React.Component {
       isSticky: false,
       returnText: " ",
       certs: null,
+      firstLoad: true,
     };
   }
   componentDidMount() {
@@ -42,7 +39,10 @@ class Root extends React.Component {
         ? this.setState({ returnText: "  +  " })
         : this.setState({ returnText: "  " });
     });
+    const loadState = localStorage.getItem("loadState") == "true";
+    this.setState({ firstLoad: loadState });
   }
+
   scrollTop = () => {
     window.scrollTo(0, 0);
   };
@@ -54,6 +54,9 @@ class Root extends React.Component {
       this.setState({ projects: data });
     });
   };
+  setLoadState() {
+    this.setState({ firstLoad: false });
+  }
 
   render() {
     if (this.state.projects === null) {
@@ -82,12 +85,14 @@ class Root extends React.Component {
               animation="follow"
             />{" "}
           </section>
-          {this.props.firstLoad ? (
+          {this.state.firstLoad == true ? (
             <div className="introSlide">
               {" "}
               <h1 className="introText">Welcome to PHRANK.ME</h1>{" "}
             </div>
-          ) : null}
+          ) : (
+            <div></div>
+          )}
           <h1 onClick={this.scrollTop} id="title">
             Hi, I'm Frank Lenoci {this.state.returnText}
           </h1>
@@ -104,7 +109,7 @@ class Root extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={codeIcon}></img>
+                <img alt="code" src={codeIcon}></img>
               </a>
               <Github3DSkyline
                 object="phr-nk_2020.glb"

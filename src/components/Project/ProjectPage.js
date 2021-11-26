@@ -22,7 +22,7 @@ class ProjectPage extends React.Component {
     window.scrollTo(0, 0);
     this.setState({ id: id });
     this.fetchData(id);
-
+    localStorage.setItem("loadState", false);
     //this.props.history.push(this.props.location);
   }
   returnToHomepage = () => {
