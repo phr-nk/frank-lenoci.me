@@ -2,6 +2,49 @@ export default async function fetchProjects() {
   return new Promise((resolve, reject) =>
     resolve([
       {
+        id: "chicagoconcertapi",
+        name: "Chicago Concert API",
+        subtitle:
+          "An API created for getting local Chicago indie music concerts.",
+        description:
+          "This project various technologies to scrape different websites and upload that data to a database. The purpose of this project was to create an API that I and other people could use to create useful websites surrounding the local Chicago music scene. I used Cheerio and Axios to scrape and parse data from local venue websites and then used Sequelize to do SQL operations to a CockroachDB serverless database. After that, I used Sequelize again in combination with Express JS to host the API.",
+        links: [
+          {
+            url: "https://chicago-concert-api.herokuapp.com/concerts",
+            githubUrl: "https://github.com/phr-nk/ChicagoConcertsAPI",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/overview.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/overview2.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/concertapigif.gif",
+      },
+      {
+        id: "openseaspoke",
+        name: "ServiceNow OpenSea Spoke",
+        subtitle:
+          "A spoke for ServiceNow's flow designer, allows for easy access to the OpenSea NFT marketplace API.",
+        description:
+          "This spoke was created and counted for credit towards 2021's Hacktoberfest. A spoke is an addition towards the IntegrationHub action that ServiceNow provides for Flow Designer, IntegrationHub makes it easier for a ServiceNow instance to connect to a third party application through REST functions. With the rise of NFTs as of late, I thought it appropriate to make a spoke to connect to the OpenSea API.",
+        links: [
+          {
+            githubUrl: "https://github.com/phr-nk/Spoketoberfest_OpenSea",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/OpenSea/get_nfts_flow.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/OpenSea/table.JPG",
+            extra_image3:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/OpenSea/form.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/OpenSea/opensea.gif",
+      },
+      {
         id: "cultra",
         name: "Cultra App",
         subtitle:
