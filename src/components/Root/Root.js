@@ -9,7 +9,7 @@ import Certification from "../Certification/Certification";
 import Contact from "../Contact/Contact";
 import fetchProjects from "../../api/apiProjects";
 import fetchCerts from "../../api/apiCerts";
-
+import scrollToComponent from "react-scroll-to-component";
 var codeIcon = require("../../assets/icons/code-64.png");
 var default_picture = require("../../assets/binary.jpg");
 
@@ -68,15 +68,44 @@ class Root extends React.Component {
     } else {
       return (
         <div id="rootmain">
-          <a href="#projectsection" id="projects">
+          <div
+            onClick={() =>
+              scrollToComponent(this.projectRef, {
+                offset: 0,
+                align: "top",
+                duration: 1500,
+              })
+            }
+            id="projects"
+          >
             Projects
-          </a>{" "}
-          <a className="contactStyle" href="#contact">
+          </div>{" "}
+          <div
+            onClick={() =>
+              scrollToComponent(this.contactRef, {
+                offset: 0,
+                align: "top",
+                duration: 1500,
+              })
+            }
+            className="contactStyle"
+            href="#contact"
+          >
             Contact
-          </a>
-          <a className="resume" href="#certssection">
+          </div>
+          <div
+            onClick={() =>
+              scrollToComponent(this.certRef, {
+                offset: 0,
+                align: "top",
+                duration: 1500,
+              })
+            }
+            className="resume"
+            href="#certssection"
+          >
             Certifications
-          </a>
+          </div>
           <section className="threescene">
             {" "}
             <Bust3D
@@ -119,7 +148,12 @@ class Root extends React.Component {
             </section>
           </Fade>
           <Fade bottom>
-            <div id="projectsection">
+            <div
+              ref={(section) => {
+                this.projectRef = section;
+              }}
+              id="projectsection"
+            >
               <h1>PROJECTS</h1>
               <div id="projectcontainer">
                 {this.state.projects.map((value, index) => {
@@ -135,6 +169,7 @@ class Root extends React.Component {
                       url={this.state.projects[index].links[0].url}
                       github={this.state.projects[index].links[0].githubUrl}
                       id={this.state.projects[index].id}
+                      tags={this.state.projects[index].tags}
                     ></Project>
                   );
                 })}
@@ -142,7 +177,12 @@ class Root extends React.Component {
             </div>
           </Fade>
           <Fade left>
-            <div id="certssection">
+            <div
+              ref={(section) => {
+                this.certRef = section;
+              }}
+              id="certssection"
+            >
               <h1>CERTIFICATIONS</h1>
               <div>
                 {this.state.certs.map((value, index) => {
@@ -159,7 +199,12 @@ class Root extends React.Component {
             </div>
           </Fade>
           <Fade bottom>
-            <div id="contact">
+            <div
+              ref={(section) => {
+                this.contactRef = section;
+              }}
+              id="contact"
+            >
               <Contact></Contact>
 
               <footer>

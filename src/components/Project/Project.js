@@ -20,6 +20,12 @@ class Project extends React.Component {
       <div className="project-card">
         <div className="project-text">
           <div className="project-title">{this.props.name}</div>
+          <div className="tagContainer">
+            {this.props.tags.map((el) => {
+              const color = el.color;
+              return <div className={color}>{el.name} </div>;
+            })}
+          </div>
           <div className="project-subtitle">
             <br></br>
             {this.props.subtitle}
@@ -48,6 +54,7 @@ class Project extends React.Component {
               >
                 Live Url
               </a>
+              <br></br>
             </div>
           ) : null}
         </div>

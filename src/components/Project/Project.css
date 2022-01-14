@@ -78,8 +78,8 @@
   color: white;
 }
 .project-card {
-  height: 256px;
-  width: 20vw;
+  height: 35vh;
+  width: 25vw;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -89,6 +89,7 @@
 }
 .project-text {
   position: absolute;
+  
   bottom: 0;
   outline: thick;
   padding: 10px;
@@ -202,4 +203,89 @@
   cursor: pointer;
   margin-left: 1.5rem;
   margin-top: 1rem;
+}
+.tagContainer{
+ 
+}
+.blue{
+  color:white;
+  padding: 0.2rem;
+  display: inline-block;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  background-color:blue;
+}
+.orange{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:orangered
+}
+.yellow{
+  text-align: center;
+  display: inline-block;
+  padding:0.3rem;
+  margin:0.4rem;
+  background-color:yellow;
+  color:black;
+}
+.green{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:green;
+}
+.pink{
+  
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:plum;
+}
+.purple{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:purple;
+}
+.darkred{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:darkred;
+}
+.lightblue{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:lightskyblue
+}
+
+.red{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:red;
+}
+.grey{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:grey;
 }

@@ -17,10 +17,18 @@ export default async function fetchProjects() {
               "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/overview.JPG",
             extra_image2:
               "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/overview2.JPG",
+            extra_image3:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/columns_covered.jpg",
           },
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/ChicagoConcertAPI/concertapigif.gif",
+        tags: [
+          { name: "Express", color: "blue" },
+          { name: "Herkoku", color: "purple" },
+          { name: "Web Scraping", color: "darkred" },
+          { name: "API Creation", color: "yellow" },
+        ],
       },
       {
         id: "openseaspoke",
@@ -43,6 +51,11 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/OpenSea/opensea.gif",
+        tags: [
+          { name: "ServiceNow", color: "green" },
+          { name: "REST", color: "pink" },
+          { name: "Hacktoberfest", color: "orange" },
+        ],
       },
       {
         id: "cultra",
@@ -66,6 +79,11 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/Cultra/cross_platform_gif.gif",
+        tags: [
+          { name: "React Native", color: "lightblue" },
+          { name: "Firebase", color: "red" },
+          { name: "Expo", color: "grey" },
+        ],
       },
       {
         id: "phranksart",
@@ -81,6 +99,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/3DART/phranksartgif.gif",
+        tags: [],
       },
       {
         id: "whosgoing",
@@ -102,6 +121,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/whosgoing.gif",
+        tags: [],
       },
       {
         id: "shirtify",
@@ -117,9 +137,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/Shirtify/ezgif.com-gif-maker.gif",
+        tags: [],
       },
       {
-        id: "Commuter",
+        id: "commuter",
         name: "Commuter Chronicles",
         subtitle: "An app developed for my iOS class at DePaul.",
         description:
@@ -137,6 +158,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/commuter.gif",
+        tags: [],
       },
       {
         id: "NYT",
@@ -152,6 +174,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/newsflash.gif",
+        tags: [],
       },
       {
         id: "Sudoku",
@@ -168,6 +191,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/sudoku.gif",
+        tags: [],
       },
       {
         id: "kbplanner",
@@ -181,6 +205,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/KB-Planner-Front-End/master/assets/projectpics/login.png",
+        tags: [],
       },
       {
         id: "PersonalWebsite",
@@ -197,6 +222,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/phrank.me/master/src/assets/threedhead.png",
+        tags: [],
       },
       {
         id: "RogueLike",
@@ -210,6 +236,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/CommandLineRogueLike/master/RogueLike.gif",
+        tags: [],
       },
       {
         id: "BopPi",
@@ -221,6 +248,7 @@ export default async function fetchProjects() {
         links: [{ githubUrl: "https://github.com/phr-nk/BopPi" }],
         img:
           "https://user-images.githubusercontent.com/28155935/55992181-9311fc00-5c71-11e9-9ea7-071dfa988cab.PNG",
+        tags: [],
       },
     ])
   );
