@@ -26,12 +26,12 @@ class Project extends React.Component {
               return <div className={color}>{el.name} </div>;
             })}
           </div>
+          <div onClick={this.handleClick} className="collapsible">
+            {this.state.symbol}
+          </div>
           <div className="project-subtitle">
             <br></br>
             {this.props.subtitle}
-            <div onClick={this.handleClick} className="collapsible">
-              {this.state.symbol}
-            </div>
           </div>
 
           {this.state.open ? (
