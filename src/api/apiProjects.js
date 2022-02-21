@@ -2,6 +2,30 @@ export default async function fetchProjects() {
   return new Promise((resolve, reject) =>
     resolve([
       {
+        id: "weeklychicagoconcerts",
+        name: "Weekly Chicago Concerts",
+        subtitle:
+          "A React website that uses the API I developed in my previous project.",
+        description:
+          "This project uses the API I made in a previous project to display the data in a clean way and provide a tool to find upcoming concerts in Chicago. I plan to add more venues in the future and maybe add some more attributes to the API.",
+        links: [
+          {
+            url: "https://weeklychicagoconcerts.onrender.com/",
+            githubUrl: "https://github.com/phr-nk/WeeklyChicagoConcerts",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/WeeklyChicagoConcerts/wcc_mobile.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/WeeklyChicagoConcerts/wcc_gif.gif",
+        tags: [
+          { name: "React", color: "lightblue" },
+          { name: "Material UI", color: "blue" },
+          { name: "Mailchimp", color: "yellow" },
+        ],
+      },
+      {
         id: "chicagoconcertapi",
         name: "Chicago Concert API",
         subtitle:

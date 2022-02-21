@@ -117,7 +117,7 @@ class Root extends React.Component {
           {this.state.firstLoad == true ? (
             <div className="introSlide">
               {" "}
-              <h1 className="introText">Welcome to PHRANK.ME</h1>{" "}
+              <h1 className="introText">Welcome</h1>{" "}
             </div>
           ) : (
             <div></div>
@@ -125,7 +125,7 @@ class Root extends React.Component {
           <h1 onClick={this.scrollTop} id="title">
             Hi, I'm Frank Lenoci {this.state.returnText}
           </h1>
-          <h2 id="subtitle">Click Anywhere Above for Ripple Effect </h2>
+          <h2 id="subtitle">Click Anywhere Above for a 3D Ripple Effect </h2>
           <Fade bottom>
             <About></About>
           </Fade>

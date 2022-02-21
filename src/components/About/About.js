@@ -11,11 +11,11 @@ class About extends React.Component {
           degree in Computer Science. I am currently working at{" "}
           <a
             className="highmetric_link"
-            href="https://www.highmetric.com/"
+            href="https://www.newrocket.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Highmetric
+            NewRocket
           </a>{" "}
           as a Technical Consultant. I have 5 years of experience working on
           different software projects using various tech stacks. I am passionate
