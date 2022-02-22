@@ -375,8 +375,8 @@ class ThreeDScene extends React.Component {
       renderer.setRenderTarget(null);
       composer.render();
       //==============================
-      modelContainer.rotation.y += 0.0025;
-
+      // modelContainer.rotation.y += 0.0025;
+      modelContainer.rotation.y = Math.sin(Date.now() * 0.0005) * Math.PI * 0.2;
       animationFrame = requestAnimationFrame(render);
 
       isRendering = true;
