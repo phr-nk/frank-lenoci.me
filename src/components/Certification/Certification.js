@@ -19,7 +19,7 @@ class Certification extends React.Component {
         <div className="cert-text">
           <div className="cert-title">{this.props.name}</div>
           <div className="cert-subtitle">
-            <div>Orginzation: {this.props.org}</div>
+            <div>Organization: {this.props.org}</div>
             <div>Issue Date: {this.props.issue_date}</div>
             <br />
             <div onClick={this.handleClick} className="cert-colapse">
