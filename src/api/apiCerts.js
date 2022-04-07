@@ -12,6 +12,17 @@ export default async function fetchCerts() {
         issue_date: "August 2020",
       },
       {
+        id: "itsm",
+        name:
+          "ServiceNow Certified Implementation Specialist - IT Service Management",
+        org: "ServiceNow",
+        link:
+          "https://account.servicenow.com/personal-data/11eb22a72/a17be8295/e30620d88/16d904WN7/resume.html",
+        picture:
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/Certs/ITSM.JPG",
+        issue_date: "March 2022",
+      },
+      {
         id: "csa",
         name: "ServiceNow Certified System Administrator",
         org: "ServiceNow",
