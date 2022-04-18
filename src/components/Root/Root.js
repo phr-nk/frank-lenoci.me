@@ -116,8 +116,9 @@ class Root extends React.Component {
           </section>
           {this.state.firstLoad == true ? (
             <div className="introSlide">
-              {" "}
-              <h1 className="introText">Welcome</h1>{" "}
+              <h1 className="introText">
+                <span className="loadingDots">Welcome</span>
+              </h1>
             </div>
           ) : (
             <div></div>
