@@ -7,8 +7,8 @@ class About extends React.Component {
       <div id="aboutcontainer">
         <h1 id="about">About Me </h1>
         <p>
-          Hello! I' Frank and am a graduate from DePaul University with a
-          Bachelor's of Science degree in Computer Science. Currntly, I am
+          Hello! I'm Frank and am a graduate from DePaul University with a
+          Bachelor's of Science degree in Computer Science. Currently, I am
           working at{" "}
           <a
             className="highmetric_link"
