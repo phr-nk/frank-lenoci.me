@@ -1,0 +1,106 @@
+@media (min-width: 200px) and (max-width: 480px) {
+   body .song-content {
+      margin-bottom: 5rem;
+      color: white;
+      
+   
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
+      padding:1rem;
+      font-size: large;
+      font-family: "Courier New", Courier, monospace;
+      border-style: groove;
+      border-radius: 0.5rem;
+      background-color: black;
+      height:10vh;
+     
+    }
+
+    body .song-box{
+      position: absolute;
+  
+      top:80vh;
+      left:0;
+      right:0;
+   }
+   body .song-play-button{
+      float:right;
+      width: 35px;
+      height: 35px;
+      margin-top:1rem;
+      
+   }
+}
+.song-content {
+    margin-bottom: 5rem;
+    color: white;
+    
+ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    padding:1rem;
+    font-size: large;
+    font-family: "Courier New", Courier, monospace;
+    border-style: groove;
+    border-radius: 0.5rem;
+    background-color: black;
+    height:10vh;
+   
+  }
+  .song-text-not-playing {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5rem;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 25vw;
+   padding: 20px;
+   font-size: larger;
+   font-family: "Courier New", Courier, monospace;
+   border-style: groove;
+   border-radius: 0.5rem;
+   background-color: black;
+   height:5vh;
+  
+ }
+ .song-text{
+   display: flex;;
+   flex-direction: column;
+   justify-content: center;
+   align-self: center;
+   margin-top:0.5rem;
+ }
+ .song-box{
+    position: absolute;
+
+    top:75vh;
+    left:0;
+    right:0;
+ }
+.song-intro-text{
+   color: white;
+   font-family: "Courier New", Courier, monospace;
+   font-size:larger;
+   text-decoration: underline;
+
+}
+.song-play-button{
+   float:right;
+   width: 35px;
+   height: 35px;
+   margin-top:1rem;
+   
+}
+ .song-image{
+    float: left;  
+    width: 60px;
+    height:55px;
+    margin-right:2rem;
+    margin-top:0.5rem;
+ }
