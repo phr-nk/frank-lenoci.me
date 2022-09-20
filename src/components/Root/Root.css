@@ -33,7 +33,7 @@
     color: white;
     position: absolute;
     top: 6vh;
-    right: 5vw;
+    right: 13vw;
     width: 60px;
     cursor: pointer;
     animation-name: glitch-original, floating;
@@ -126,7 +126,7 @@
     font-size: 35px;
     background-color: black;
     width: 60vh;
-    top: 82vh;
+    top: 90vh;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -219,7 +219,7 @@
     font-size: 23px;
     background-color: black;
     width: 60vh;
-    top: 82vh;
+    top: 90vh;
     left: 0;
     right: 0;
     margin-left: auto;

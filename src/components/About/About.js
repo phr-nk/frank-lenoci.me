@@ -6,7 +6,7 @@ class About extends React.Component {
     return (
       <div id="aboutcontainer">
         <h1 id="about">About Me </h1>
-        <p>
+        <p id="text">
           Hello! I'm Frank and am a graduate from DePaul University with a
           Bachelor's of Science degree in Computer Science. Currently, I am
           working at{" "}

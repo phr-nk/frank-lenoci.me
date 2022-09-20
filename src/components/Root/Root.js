@@ -10,7 +10,11 @@ import Contact from "../Contact/Contact";
 import fetchProjects from "../../api/apiProjects";
 import fetchCerts from "../../api/apiCerts";
 import scrollToComponent from "react-scroll-to-component";
+import CurrentSong from "../CurrentSongPlaying/CurrentSong";
+
 var codeIcon = require("../../assets/icons/code-64.png");
+
+
 var default_picture = require("../../assets/binary.jpg");
 
 function vh(v) {
@@ -126,6 +130,7 @@ class Root extends React.Component {
           <h1 onClick={this.scrollTop} id="title">
             Hi, I'm Frank Lenoci {this.state.returnText}
           </h1>
+          <CurrentSong></CurrentSong>
           <h2 id="subtitle">Click Anywhere Above for a 3D Ripple Effect </h2>
           <Fade bottom>
             <About></About>

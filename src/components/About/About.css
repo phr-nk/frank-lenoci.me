@@ -1,5 +1,5 @@
 @media (min-width: 200px) and (max-width: 480px) {
-  body p {
+  body #text {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-p {
+#text {
   margin-bottom: 5rem;
   color: white;
   text-align: left;
