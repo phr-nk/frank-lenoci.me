@@ -130,7 +130,9 @@ class Root extends React.Component {
           <h1 onClick={this.scrollTop} id="title">
             Hi, I'm Frank Lenoci {this.state.returnText}
           </h1>
+          <div>
           <CurrentSong></CurrentSong>
+          </div>
           <h2 id="subtitle">Click Anywhere Above for a 3D Ripple Effect </h2>
           <Fade bottom>
             <About></About>
