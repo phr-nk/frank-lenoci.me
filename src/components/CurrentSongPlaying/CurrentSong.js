@@ -99,12 +99,11 @@ function CurrentSong() {
     fetchRecent().then((res) => {
       return res.json()
     }).then((data) => {
-      console.log(data)
       setSong(data.items[0].track.name)
-        setArtist(data.items[0].track.artists[0].name)
-        setID(data.items[0].track.id)
-        setLink(data.items[0].track.external_urls.spotify)
-        setImage(data.items[0].track.album.images[0].url)
+      setArtist(data.items[0].track.artists[0].name)
+      setID(data.items[0].track.id)
+      setLink(data.items[0].track.external_urls.spotify)
+      setImage(data.items[0].track.album.images[0].url)
     }).catch((err) => {
       console.log(err);
     });
