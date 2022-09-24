@@ -21,6 +21,7 @@ var play_button = require("../../assets/play_button.png")
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
+    mode: 'cors',
     headers: {
       Authorization: `Basic ${basic}`,
       "Content-Type": "application/x-www-form-urlencoded",
