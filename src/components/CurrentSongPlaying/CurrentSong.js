@@ -11,6 +11,7 @@ const refresh_token =process.env.REACT_APP_REFESH_TOKEN;
 
 var basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
+const RECENT_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-played`;
 const ARTIST_GENRE_ENDPOINT = `https://api.spotify.com/v1/artists/`;
 const TRACK_ENDPOINT = `https://api.spotify.com/v1/tracks/`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
@@ -42,6 +43,15 @@ export const getNowPlaying = async () => {
     },
   });
 };
+export const getRecentlyPlayed = async () => {
+  const { access_token } = await getAccessToken();
+
+  return fetch(RECENT_PLAYED_ENDPOINT, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+};
 
 export const getArtistGenre = async (id) => {
     const { access_token } = await getAccessToken();
@@ -62,6 +72,7 @@ function CurrentSong() {
   // Similar to componen tDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
+
     const fetchCurrent= async () => {
       // get the data from the api
       const response = await getNowPlaying();
@@ -76,31 +87,26 @@ function CurrentSong() {
     }
 
 
+    const fetchRecent = async () => {
+      const response = await getRecentlyPlayed();
+      // convert data to json
 
-    fetchCurrent()
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        
-        setSong(data.item.name)
-        setArtist(data.item.artists[0].name)
-        setID(data.item.artists[0].id)
-        setLink(data.item.external_urls.spotify)
-        return fetchArtist(data.item.id)
-      })
-      .then((res)=> {
+      return response;
+    }
 
-        return res.json()
-      })
-      .then((data)=> {
-        setImage(data.album.images[0].url)
-        
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    
+
+    fetchRecent().then((res) => {
+      return res.json()
+    }).then((data) => {
+      console.log(data)
+      setSong(data.items[0].track.name)
+        setArtist(data.items[0].track.artists[0].name)
+        setID(data.items[0].track.id)
+        setLink(data.items[0].track.external_urls.spotify)
+        setImage(data.items[0].track.album.images[0].url)
+    }).catch((err) => {
+      console.log(err);
+    });
 
     
 
@@ -108,7 +114,7 @@ function CurrentSong() {
 
   return (
     <div className="song-box" >
-       {song ? (<p className="song-content"><span className="song-intro-text"><b>What am I listening to?</b></span><img className="song-image"src={image}></img><a target="_blank" href={link}><img className="song-play-button" src={play_button}></img></a><div className="song-text"><b>{song}</b><span className="song-name-text">{artist}</span></div></p>) : (<p className="song-text-not-playing">No song playing</p>)}
+       {song ? (<p className="song-content"><span className="song-intro-text"><b>Here's what I am listening to: </b></span><br></br><img className="song-image"src={image}></img><a target="_blank" href={link}><img className="song-play-button" src={play_button}></img></a><div className="song-text"><b>{song}</b><span className="song-name-text">{artist}</span></div></p>) : (<p className="song-content"><span className="song-intro-text"><b>Here's what I am listening to: </b></span>No song playing</p>)}
     </div>
   );
 }

@@ -10,17 +10,16 @@
       padding:1rem;
       font-size: large;
       font-family: "Courier New", Courier, monospace;
-      border-style: groove;
-      border-radius: 0.5rem;
+    
       background-color: black;
-      height:10vh;
+      height:14vh;
      
     }
 
     body .song-box{
       position: absolute;
   
-      top:80vh;
+      top:74vh;
       left:0;
       right:0;
    }
@@ -43,8 +42,7 @@
     padding:1rem;
     font-size: large;
     font-family: "Courier New", Courier, monospace;
-    border-style: groove;
-    border-radius: 0.5rem;
+   
     background-color: black;
     height:10vh;
    
@@ -86,7 +84,7 @@
 .song-intro-text{
    color: white;
    font-family: "Courier New", Courier, monospace;
-   font-size:larger;
+   font-size: 15pt;
    text-decoration: underline;
 
 }
