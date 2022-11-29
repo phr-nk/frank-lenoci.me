@@ -1,3 +1,29 @@
+@media (max-width: 1800px) and (min-width: 600px) {
+   body .song-content {
+      margin-bottom: 5rem;
+      color: white;
+      
+   
+      margin-left: auto;
+      margin-right: auto;
+      width: 50vw;
+      padding:1rem;
+      font-size: large;
+      font-family: "Courier New", Courier, monospace;
+    
+      background-color: black;
+      height:14vh;
+     
+    }
+
+    body .song-box{
+      position: absolute;
+      top:74vh;
+      left:0;
+      right:0;
+   }
+}
+
 @media (min-width: 200px) and (max-width: 480px) {
    body .song-content {
       margin-bottom: 5rem;
@@ -18,8 +44,7 @@
 
     body .song-box{
       position: absolute;
-  
-      top:74vh;
+      top:75vh;
       left:0;
       right:0;
    }
@@ -77,7 +102,7 @@
  .song-box{
     position: absolute;
 
-    top:75vh;
+    top:77vh;
     left:0;
     right:0;
  }

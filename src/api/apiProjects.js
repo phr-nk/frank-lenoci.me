@@ -123,7 +123,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/3DART/phranksartgif.gif",
-        tags: [],
+        tags: [
+          { name: "ASP.NET", color: "purple" },
+          { name: "Three.JS", color: "grey" },
+        ],
       },
       {
         id: "whosgoing",
@@ -145,7 +148,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/whosgoing.gif",
-        tags: [],
+        tags: [
+          { name: "React", color: "lightblue" },
+          { name: "Firebase", color: "red" },
+        ],
       },
       {
         id: "shirtify",
@@ -161,7 +167,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/Storage/master/Shirtify/ezgif.com-gif-maker.gif",
-        tags: [],
+        tags: [
+          { name: "React", color: "lightblue" },
+          { name: "D3", color: "green" },
+        ],
       },
       {
         id: "commuter",
@@ -182,7 +191,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/commuter.gif",
-        tags: [],
+        tags: [
+          { name: "Swift", color: "orange" },
+          { name: "iOS", color: "GREY" },
+        ],
       },
       {
         id: "NYT",
@@ -198,7 +210,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/newsflash.gif",
-        tags: [],
+        tags: [
+          { name: "React", color: "lightblue" },
+          { name: "Material UI", color: "blue" },
+        ],
       },
       {
         id: "Sudoku",
@@ -215,7 +230,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/sudoku.gif",
-        tags: [],
+        tags: [{ name: "React", color: "lightblue" }],
       },
       {
         id: "kbplanner",
@@ -229,7 +244,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/KB-Planner-Front-End/master/assets/projectpics/login.png",
-        tags: [],
+        tags: [
+          { name: "Vanilla JS", color: "blue" },
+          { name: "HTML", color: "orange" },
+        ],
       },
       {
         id: "PersonalWebsite",
@@ -246,7 +264,10 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/phrank.me/master/src/assets/threedhead.png",
-        tags: [],
+        tags: [
+          { name: "React", color: "lightblue" },
+          { name: "Three.JS", color: "grey" },
+        ],
       },
       {
         id: "RogueLike",
@@ -260,7 +281,7 @@ export default async function fetchProjects() {
         ],
         img:
           "https://raw.githubusercontent.com/phr-nk/CommandLineRogueLike/master/RogueLike.gif",
-        tags: [],
+        tags: [{ name: "C++", color: "blue" }],
       },
       {
         id: "BopPi",
@@ -272,7 +293,10 @@ export default async function fetchProjects() {
         links: [{ githubUrl: "https://github.com/phr-nk/BopPi" }],
         img:
           "https://user-images.githubusercontent.com/28155935/55992181-9311fc00-5c71-11e9-9ea7-071dfa988cab.PNG",
-        tags: [],
+        tags: [
+          { name: "Python", color: "yellow" },
+          { name: "Raspberry Pi", color: "green" },
+        ],
       },
     ])
   );

@@ -90,7 +90,6 @@
 @media (min-width: 1800px) {
   body #projects {
     font-size: x-large;
-    display: flex;
     color: white;
     position: absolute;
     top: 40vh;
@@ -123,7 +122,7 @@
   }
   body #subtitle {
     position: absolute;
-    font-size: 35px;
+    font-size: 25px;
     background-color: black;
     width: 60vh;
     top: 90vh;
@@ -183,11 +182,10 @@
 @media (max-width: 1800px) and (min-width: 600px) {
   body #projects {
     font-size: x-large;
-    display: flex;
     color: white;
     position: absolute;
     top: 40vh;
-    left: 20vh;
+    left: 10vh;
     width: 60px;
     z-index: 5;
     display: block;
@@ -216,7 +214,7 @@
   }
   body #subtitle {
     position: absolute;
-    font-size: 23px;
+    font-size: 20px;
     background-color: black;
     width: 60vh;
     top: 90vh;
@@ -320,7 +318,7 @@
 }
 #subtitle {
   opacity: 0;
-  animation-name: fadeIn, glitch;
+  animation-name: fadeIn;
   animation-delay: 3s, 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1, infinite;
@@ -343,8 +341,8 @@
   animation-name: glitch, glitch;
   animation-iteration-count: 1, infinite;
   animation-timing-function: ease-in, ease;
-  animation-delay: 0s, 9s;
-  animation-duration: 15s, 9s;
+  animation-delay: 0s, 5s;
+  animation-duration: 10s, 18s;
 }
 .code{
   
