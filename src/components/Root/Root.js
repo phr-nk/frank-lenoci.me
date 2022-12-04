@@ -11,7 +11,6 @@ import fetchProjects from "../../api/apiProjects";
 import fetchCerts from "../../api/apiCerts";
 import scrollToComponent from "react-scroll-to-component";
 import CurrentSong from "../CurrentSongPlaying/CurrentSong";
-
 var codeIcon = require("../../assets/icons/code-64.png");
 
 var default_picture = require("../../assets/binary.jpg");
@@ -35,6 +34,7 @@ class Root extends React.Component {
       firstLoad: true,
       tags: null,
       selectedTag: "all",
+      matches: window.matchMedia("(min-width: 480px)").matches,
     };
   }
   componentDidMount() {
@@ -47,6 +47,8 @@ class Root extends React.Component {
     });
     const loadState = localStorage.getItem("loadState") == "true";
     this.setState({ firstLoad: loadState });
+    const handler = (e) => this.setState({ matches: e.matches });
+    window.matchMedia("(min-width: 480px)").addEventListener("change", handler);
   }
 
   scrollTop = () => {
@@ -196,48 +198,77 @@ class Root extends React.Component {
               />
             </section>
           </Fade>
+          <div
+            ref={(section) => {
+              this.projectRef = section;
+            }}
+            id="projectsection"
+          ></div>
           <Fade bottom>
-            <div
-              ref={(section) => {
-                this.projectRef = section;
-              }}
-              id="projectsection"
-            >
-              <h1 id="project-title">PROJECTS</h1>
-              <div id="tagcontainer">
-                {this.state.tags.map((value, index) => {
-                  return (
-                    <div
-                      onClick={(event) => this.handleClick(event, value.name)}
-                      id="tag"
-                      className={value.color}
-                    >
-                      {value.name}
-                    </div>
-                  );
-                })}
-              </div>
-              <div id="projectcontainer">
-                {this.state.projects.map((value, index) => {
-                  return (
-                    <Project
-                      name={this.state.projects[index].name}
-                      img={
-                        this.state.projects[index].img != null
-                          ? this.state.projects[index].img
-                          : default_picture
-                      }
-                      subtitle={this.state.projects[index].subtitle}
-                      url={this.state.projects[index].links[0].url}
-                      github={this.state.projects[index].links[0].githubUrl}
-                      id={this.state.projects[index].id}
-                      tags={this.state.projects[index].tags}
-                    ></Project>
-                  );
-                })}
-              </div>
+            <h1 id="project-title">PROJECTS</h1>
+          </Fade>
+          <Fade bottom>
+            <div id="tagcontainer">
+              {this.state.tags.map((value, index) => {
+                return (
+                  <div
+                    onClick={(event) => this.handleClick(event, value.name)}
+                    id="tag"
+                    className={value.color}
+                  >
+                    {value.name}
+                  </div>
+                );
+              })}
             </div>
           </Fade>
+          <div>
+            {this.state.matches ? (
+              <Fade bottom>
+                <div id="projectcontainer">
+                  {this.state.projects.map((value, index) => {
+                    return (
+                      <Project
+                        name={this.state.projects[index].name}
+                        img={
+                          this.state.projects[index].img != null
+                            ? this.state.projects[index].img
+                            : default_picture
+                        }
+                        subtitle={this.state.projects[index].subtitle}
+                        url={this.state.projects[index].links[0].url}
+                        github={this.state.projects[index].links[0].githubUrl}
+                        id={this.state.projects[index].id}
+                        tags={this.state.projects[index].tags}
+                      ></Project>
+                    );
+                  })}
+                </div>
+              </Fade>
+            ) : (
+              <div>
+                {this.state.projects.map((value, index) => {
+                  return (
+                    <Fade bottom>
+                      <Project
+                        name={this.state.projects[index].name}
+                        img={
+                          this.state.projects[index].img != null
+                            ? this.state.projects[index].img
+                            : default_picture
+                        }
+                        subtitle={this.state.projects[index].subtitle}
+                        url={this.state.projects[index].links[0].url}
+                        github={this.state.projects[index].links[0].githubUrl}
+                        id={this.state.projects[index].id}
+                        tags={this.state.projects[index].tags}
+                      ></Project>
+                    </Fade>
+                  );
+                })}
+              </div>
+            )}
+          </div>
           <Fade left>
             <div
               ref={(section) => {
