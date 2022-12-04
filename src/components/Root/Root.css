@@ -28,6 +28,24 @@
     margin-right: auto;
     z-index: 5;
   }
+ body #Skyline{
+   
+    width:75vw;
+  
+  
+  }
+  body #project-title{
+   
+    width:75vw;
+  
+  
+  }
+  body #cert-title{
+   
+    width:75vw;
+  
+  
+  }
   body .resume {
     font-size: large;
     color: white;
@@ -280,9 +298,29 @@
     margin-left: auto;
     margin-right: auto;
   font-size: x-large;
+  color: black;
+  text-align: center;
+  background-color: white;
+  width:25vw;
+
 
 }
-
+#project-title{
+  color: black;
+  text-align: center;
+  background-color: white;
+  width:10vw;
+  margin-left:auto;
+  margin-right: auto;
+}
+#cert-title{
+  color: black;
+  text-align: center;
+  background-color: white;
+  width:10vw;
+  margin-left:auto;
+  margin-right: auto;
+}
 .introSlide {
   opacity: 1;
   background-color: black;
@@ -363,11 +401,22 @@
   display: flex;
   flex-wrap: wrap;
 }
-#certcontainer {
-
+#tagcontainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right:2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 
 }
-
+#tag{
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+ align-items: center;
+ margin:0.5rem;
+}
 .loadingDots:after {
   content: '.';
   animation: dots 1s steps(5, end) infinite;}
@@ -570,4 +619,98 @@
   100% {
     text-shadow: 0px 0px green, 0px 0px cyan;
   }
+}
+
+
+.blue{
+  color:white;
+  padding: 0.2rem;
+  display: inline-block;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  background-color:blue;
+  cursor: pointer;
+}
+.orange{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:orangered;
+  cursor: pointer;
+}
+.yellow{
+  text-align: center;
+  display: inline-block;
+  padding:0.3rem;
+  margin:0.4rem;
+  background-color:yellow;
+  color:black;
+  cursor: pointer;
+}
+.green{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:green;
+  cursor: pointer;
+}
+.pink{
+  
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:plum;
+  cursor: pointer;
+}
+.purple{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:purple;
+  cursor: pointer;
+}
+.darkred{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:darkred;
+  cursor: pointer;
+}
+.lightblue{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:lightskyblue;
+  cursor: pointer;
+}
+
+.red{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:red;
+  cursor: pointer;
+}
+.grey{
+  color:white;
+  text-align: center;
+  padding:0.3rem;
+  margin:0.4rem;
+  display: inline-block;
+  background-color:grey;
+  cursor: pointer;
 }

@@ -14,7 +14,6 @@ import CurrentSong from "../CurrentSongPlaying/CurrentSong";
 
 var codeIcon = require("../../assets/icons/code-64.png");
 
-
 var default_picture = require("../../assets/binary.jpg");
 
 function vh(v) {
@@ -29,10 +28,13 @@ class Root extends React.Component {
     super(props);
     this.state = {
       projects: null,
+      fullProjectList: null,
       isSticky: false,
       returnText: " ",
       certs: null,
       firstLoad: true,
+      tags: null,
+      selectedTag: "all",
     };
   }
   componentDidMount() {
@@ -54,16 +56,55 @@ class Root extends React.Component {
     fetchCerts().then((data) => {
       this.setState({ certs: data });
     });
-    fetchProjects().then((data) => {
-      this.setState({ projects: data });
-    });
+    fetchProjects()
+      .then((data) => {
+        this.setState({ projects: data });
+        this.setState({ fullProjectList: data });
+        return data;
+      })
+      .then((res) => {
+        var projects = res;
+        var tagsWhole = [];
+        tagsWhole.push({ name: "All", color: "red" });
+        for (var i = 0; i < projects.length; i++) {
+          var tags = projects[i].tags;
+          for (var j = 0; j < tags.length; j++) {
+            tagsWhole.push({ name: tags[j].name, color: tags[j].color });
+          }
+        }
+        var jsonObject = tagsWhole.map(JSON.stringify);
+
+        var uniqueSet = new Set(jsonObject);
+        var uniqueArray = Array.from(uniqueSet).map(JSON.parse);
+
+        this.setState({ tags: uniqueArray });
+      });
   };
   setLoadState() {
     this.setState({ firstLoad: false });
   }
+  handleClick = (event, message) => {
+    this.setState({ selectedTag: message });
+
+    if (message == "All") {
+      this.setState({ projects: this.state.fullProjectList });
+    } else {
+      var filteredArr = [];
+
+      for (var i in this.state.fullProjectList) {
+        for (var j in this.state.fullProjectList[i].tags) {
+          if (message == this.state.fullProjectList[i].tags[j].name) {
+            filteredArr.push(this.state.fullProjectList[i]);
+          }
+        }
+      }
+
+      this.setState({ projects: filteredArr });
+    }
+  };
 
   render() {
-    if (this.state.projects === null) {
+    if (this.state.projects === null || this.state.tags === null) {
       return (
         <div id="rootmain">
           <h1>LOADING</h1>
@@ -131,7 +172,7 @@ class Root extends React.Component {
             Hi, I'm Frank Lenoci {this.state.returnText}
           </h1>
           <div>
-          <CurrentSong></CurrentSong>
+            <CurrentSong></CurrentSong>
           </div>
           <h2 id="subtitle">Click Anywhere Above for a 3D Ripple Effect </h2>
           <Fade bottom>
@@ -162,7 +203,20 @@ class Root extends React.Component {
               }}
               id="projectsection"
             >
-              <h1>PROJECTS</h1>
+              <h1 id="project-title">PROJECTS</h1>
+              <div id="tagcontainer">
+                {this.state.tags.map((value, index) => {
+                  return (
+                    <div
+                      onClick={(event) => this.handleClick(event, value.name)}
+                      id="tag"
+                      className={value.color}
+                    >
+                      {value.name}
+                    </div>
+                  );
+                })}
+              </div>
               <div id="projectcontainer">
                 {this.state.projects.map((value, index) => {
                   return (
@@ -191,7 +245,7 @@ class Root extends React.Component {
               }}
               id="certssection"
             >
-              <h1>CERTIFICATIONS</h1>
+              <h1 id="cert-title">CERTIFICATIONS</h1>
               <div>
                 {this.state.certs.map((value, index) => {
                   return (

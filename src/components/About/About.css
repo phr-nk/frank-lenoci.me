@@ -6,6 +6,9 @@
     font-size: large;
     width: 70vw;
   }
+  body #about {
+    width:75vw;
+  }
 }
 
 #aboutcontainer {
@@ -13,8 +16,13 @@
   flex-direction: column;
 }
 #about {
-  color: white;
+  color: black;
   text-align: center;
+  background-color: white;
+  width:10vw;
+  margin-left:auto;
+  margin-right: auto;
+
 }
 #face {
   height: 80vh;
@@ -34,9 +42,16 @@
   padding: 20px;
   font-size: larger;
   font-family: "Courier New", Courier, monospace;
-  border-style: groove;
-  border-radius: 0.5rem;
-  margin-top:0
+  border-width: 10px;
+  border-color: white;
+  margin-top:0;
+  box-shadow: -5px 5px white, 5px 5px white;
+  transition:.6s ease;
+  
+}
+#text:hover{
+
+  box-shadow: -17px 17px white, 17px 17px white;
 }
 .highmetric_link{
   color:#eb3278;

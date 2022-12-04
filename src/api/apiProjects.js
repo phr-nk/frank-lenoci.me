@@ -193,7 +193,7 @@ export default async function fetchProjects() {
           "https://raw.githubusercontent.com/phr-nk/csc360-final-project/master/src/commuter.gif",
         tags: [
           { name: "Swift", color: "orange" },
-          { name: "iOS", color: "GREY" },
+          { name: "iOS", color: "grey" },
         ],
       },
       {
