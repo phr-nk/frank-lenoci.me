@@ -45,6 +45,12 @@
     object-fit: cover;
     margin: 1rem;
   }
+  body .project-card:hover {
+    width: 85vw;
+    height: 300px;
+    box-shadow: -4px 4px 3px white;
+    z-index:200;
+  }
  
 }
 @media (max-width: 1800px) and (min-width: 600px) {

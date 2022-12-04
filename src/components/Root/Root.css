@@ -46,6 +46,19 @@
   
   
   }
+ body #tagcontainer {
+
+    margin-right:0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  
+  }
+  body #tag{
+    font-size: medium;
+    font-family: "Courier New", Courier, monospace;
+   align-items: center;
+   margin:0.5rem;
+  }
   body .resume {
     font-size: large;
     color: white;
