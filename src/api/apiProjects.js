@@ -18,7 +18,7 @@ export default async function fetchProjects() {
           },
         ],
         img:
-          "https://raw.githubusercontent.com/phr-nk/Storage/master/WeeklyChicagoConcerts/wcc_gif.gif",
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/WeeklyChicagoConcerts/project_main.gif",
         tags: [
           { name: "React", color: "lightblue" },
           { name: "Material UI", color: "blue" },
