@@ -727,3 +727,9 @@
   background-color:grey;
   cursor: pointer;
 }
+
+.selected{
+    box-shadow: -5px 5px white, 5px 5px white;
+
+  
+}

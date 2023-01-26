@@ -67,11 +67,15 @@ class Root extends React.Component {
       .then((res) => {
         var projects = res;
         var tagsWhole = [];
-        tagsWhole.push({ name: "All", color: "red" });
+        tagsWhole.push({ name: "All", color: "red", selected: "selected" });
         for (var i = 0; i < projects.length; i++) {
           var tags = projects[i].tags;
           for (var j = 0; j < tags.length; j++) {
-            tagsWhole.push({ name: tags[j].name, color: tags[j].color });
+            tagsWhole.push({
+              name: tags[j].name,
+              color: tags[j].color,
+              selected: "notSelected",
+            });
           }
         }
         var jsonObject = tagsWhole.map(JSON.stringify);
@@ -87,6 +91,18 @@ class Root extends React.Component {
   }
   handleClick = (event, message) => {
     this.setState({ selectedTag: message });
+
+    //Set selected tag background
+    var tags = this.state.tags;
+    var objIndex = tags.findIndex((obj) => obj.name === message);
+    tags[objIndex].selected = "selected";
+
+    //Loop through tag array to deselect previous tags
+    for (var x = 0; x < tags.length; x++) {
+      if (tags[x].name != message) {
+        tags[x].selected = "notSelected";
+      }
+    }
 
     if (message == "All") {
       this.setState({ projects: this.state.fullProjectList });
@@ -214,7 +230,11 @@ class Root extends React.Component {
                   <div
                     onClick={(event) => this.handleClick(event, value.name)}
                     id="tag"
-                    className={value.color}
+                    className={
+                      value.selected == "selected"
+                        ? value.color + " " + value.selected
+                        : value.color
+                    }
                   >
                     {value.name}
                   </div>

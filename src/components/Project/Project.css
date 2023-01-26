@@ -295,3 +295,47 @@
   display: inline-block;
   background-color:grey;
 }
+
+.blue:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.orange:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+
+}
+.yellow:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.green:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.pink:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.red:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.grey:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.lightblue:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.darkred:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+.purple:hover{
+
+  box-shadow: -5px 5px white, 5px 5px white;
+}
+
+
