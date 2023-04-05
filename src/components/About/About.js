@@ -12,11 +12,11 @@ class About extends React.Component {
           working at{" "}
           <a
             className="highmetric_link"
-            href="https://www.newrocket.com/"
+            href="https://www2.deloitte.com/us/en.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            NewRocket
+            Deloitte
           </a>{" "}
           as a Software Engineer specializing in ServiceNow. I have 5 years of
           experience working on different software projects using various tech
