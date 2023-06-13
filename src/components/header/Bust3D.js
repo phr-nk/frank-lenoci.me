@@ -30,6 +30,7 @@ class ThreeDScene extends React.Component {
     var invert = true;
     var isRendering;
     var animationFrame;
+    var isPhone;
 
     const mainCamera = new THREE.PerspectiveCamera(
       3,
@@ -317,6 +318,7 @@ class ThreeDScene extends React.Component {
 
     function resizeRenderer() {
       if (window.innerWidth <= 400) {
+        isPhone = true;
         rippleCanvas.width = rippleCanvas.style.width = window.innerWidth;
         rippleCanvas.height = rippleCanvas.style.height = window.innerHeight;
         modelContainer.position.x = -0.12;
@@ -326,6 +328,7 @@ class ThreeDScene extends React.Component {
         mainCamera.aspect = window.innerWidth / window.innerHeight;
         mainCamera.updateProjectionMatrix();
       } else {
+        isPhone = false;
         rippleCanvas.width = rippleCanvas.style.width = window.innerWidth;
         rippleCanvas.height = rippleCanvas.style.height = window.innerHeight;
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -358,7 +361,9 @@ class ThreeDScene extends React.Component {
       composer.render();
       //==============================
       // modelContainer.rotation.y += 0.05;
-      //modelContainer.rotation.y = Math.sin(Date.now() * 0.0005) * Math.PI * 0.09;
+      if (isPhone)
+        modelContainer.rotation.y =
+          Math.sin(Date.now() * 0.0005) * Math.PI * 0.09;
       animationFrame = requestAnimationFrame(render);
 
       isRendering = true;
