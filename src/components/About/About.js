@@ -12,7 +12,7 @@ class About extends React.Component {
           working at{" "}
           <a
             className="highmetric_link"
-            href="https://www2.deloitte.com/us/en.html"
+            href="https://www.servicenow.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
