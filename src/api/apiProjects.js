@@ -2,6 +2,27 @@ export default async function fetchProjects() {
   return new Promise((resolve, reject) =>
     resolve([
       {
+        id: "book-of-beasts",
+        name: "A Book of Beasts",
+        subtitle: "A React game which I developed for React Jam Fall 2024. ",
+        description:
+          "This project was built for a 10 day game jam which was centered around building games using React. I've always wanted to build a game, and this challenge felt like the perfect opportunity to do so. Medieval illuminated manuscript art is so cool so I decided to theme my game around that. There is a book from the 13th century that this game is designed after. I plan on updating this game so it may look different the next time you see it. ",
+        links: [
+          {
+            url: "https://medieval-book-of-beasts.onrender.com/",
+            githubUrl: "https://github.com/phr-nk/medieval-book-of-beasts",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/BookOfBeastsImages/starting-screen.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/BookOfBeastsImages/game-screen.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/BookOfBeastsImages/bob-game.gif",
+        tags: [{ name: "React", color: "lightblue" }],
+      },
+      {
         id: "weeklychicagoconcerts",
         name: "Weekly Chicago Concerts",
         subtitle:

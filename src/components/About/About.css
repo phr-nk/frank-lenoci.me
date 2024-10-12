@@ -56,7 +56,10 @@
 .highmetric_link{
   color:#26890d;
   text-decoration: none;
+  background-color: white;
+
 }
 .highmetric_link:hover{
   text-decoration: underline;
+  
 }

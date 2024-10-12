@@ -16,7 +16,7 @@ class About extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Deloitte
+            ServiceNow
           </a>{" "}
           as a Software Engineer specializing in ServiceNow. I have 5 years of
           experience working on different software projects using various tech
