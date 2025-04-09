@@ -13,15 +13,15 @@ export default async function fetchProjects() {
             githubUrl: "https://github.com/phr-nk/ServiceNow-AI-Assistant.git",
 
             extra_image1:
-              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/architect_home.JPG",
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/team.JPG",
             extra_image2:
-              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor.JPG",
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/dashboard.JPG",
              extra_image3:
-              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor2.JPG",
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/krono_ai.JPG",
           },
         ],
         img:
-          "https://raw.githubusercontent.com/phr-nk/master/DTHackathon/DTHackathonSubmission-ArticleArchitectv2.gif",
+          "https://raw.githubusercontent.com/phr-nk/master/LaunchpadHack/GDWHackathonFinalVideo-Krononautsv4.gif",
         tags: [{ name: "ServiceNow", color: "green" }],
       },
       {
