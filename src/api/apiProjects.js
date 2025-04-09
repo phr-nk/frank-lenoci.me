@@ -15,7 +15,7 @@ export default async function fetchProjects() {
             extra_image1:
               "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/team.JPG",
             extra_image2:
-              "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/dashboard.JPG",
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/homepage.JPG",
              extra_image3:
               "https://raw.githubusercontent.com/phr-nk/Storage/master/LaunchpadHack/krono_ai.JPG",
           },
