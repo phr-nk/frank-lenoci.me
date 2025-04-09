@@ -1,6 +1,73 @@
 export default async function fetchProjects() {
   return new Promise((resolve, reject) =>
     resolve([
+       {
+        id: "timetravel-workspace",
+        name: "Launchpad Hack - TimeTravel Workspace",
+        subtitle: "A ServiceNow workspace built to bring global teams together.",
+        description:
+           "TimeTravel is an innovative ServiceNow workspace designed to foster collaboration and connection among global teams. This platform incorporates a dynamic and interactive 3D globe, built with Three.js, which visually represents team members and their accomplishments around the world. A standout feature of TimeTravel is its seamless integration of 3D environments into the ServiceNow ecosystem, showcasing advanced UI capabilities and enhancing user engagement. Additionally, the project features Krono AI, an intelligent virtual assistant that empowers users to navigate the workspace effortlessly and build stronger connections with their colleagues. TimeTravel bridges the gap between creativity, technology, and teamwork, setting a new standard for interactive workplace solutions.",
+        links : [
+          {
+            url: "",
+            githubUrl: "https://github.com/phr-nk/ServiceNow-AI-Assistant.git",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/architect_home.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor.JPG",
+             extra_image3:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor2.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/master/DTHackathon/DTHackathonSubmission-ArticleArchitectv2.gif",
+        tags: [{ name: "ServiceNow", color: "green" }],
+      },
+      {
+        id: "article architect",
+        name: "DT Hackathon - Article Architect",
+        subtitle: "A ServiceNow workspace Agentic AI component.",
+        description:
+           "Article Architect is an innovative AI-powered UI component seamlessly integrated into the ServiceNow workspace. Developed as part of a hackathon within the DT organization at ServiceNow, this project aims to revolutionize the process of creating stylish articles. By leveraging Agentic AI, Article Architect allows users to transform existing images into visually compelling articles with ease.",
+        links: [ 
+          {
+            url: "",
+            githubUrl: "https://github.com/phr-nk/ServiceNow-AI-Assistant.git",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/architect_home.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor.JPG",
+             extra_image3:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/editor2.JPG",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/master/DTHackathon/DTHackathonSubmission-ArticleArchitectv2.gif",
+        tags: [{ name: "ServiceNow", color: "green" }],
+      },
+       {
+        id: "resilient-state",
+        name: "Resilient State - ServiceNow Workspace",
+        subtitle: "ServiceNow workspace developed for an internal asset challenge. Our team won best asset for market expansion. ",
+        description:
+           "Resilient State is an innovative ServiceNow workspace designed to help state governments predict and manage wildfire responses more effectively. This cutting-edge application leverages AI technology, featuring an intuitive chatbot that provides users with easy-to-access information and actionable insights. Tailored specifically for wildfire-prone regions, Resilient State empowers officials with tools to make informed decisions, streamline operations, and enhance community safety. A standout project in Deloitte's 2024 internal Shark Tank Asset challenge, Resilient State earned recognition as the best asset for market expansion, underscoring its impact and potential in addressing critical environmental challenges. As part of the development team, I contributed to this success by designing and implementing all of the custom UI components that shape the workspace, ensuring both functionality and user-friendly interaction.",
+        links: [
+          {
+            url: "",
+            githubUrl: "https://github.com/phr-nk/ServiceNow-Leaflet-Map.git",
+
+            extra_image1:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DisasterWorkspace/resq_ai.JPG",
+            extra_image2:
+              "https://raw.githubusercontent.com/phr-nk/Storage/master/DisasterWorkspace/Challenge%20Award.jpeg",
+          },
+        ],
+        img:
+          "https://raw.githubusercontent.com/phr-nk/master/DisasterWorkspace/dashboard.JPG",
+        tags: [{ name: "ServiceNow", color: "green" }],
+      },
       {
         id: "book-of-beasts",
         name: "A Book of Beasts",
