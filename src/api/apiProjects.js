@@ -21,7 +21,7 @@ export default async function fetchProjects() {
           },
         ],
         img:
-          "https://raw.githubusercontent.com/phr-nk/master/LaunchpadHack/GDWHackathonFinalVideo-Krononautsv4.gif",
+          "https://raw.githubusercontent.com/phr-nk//Storage/master/LaunchpadHack/GDWHackathonFinalVideo-Krononautsv4.gif",
         tags: [{ name: "ServiceNow", color: "green" }],
       },
       {
@@ -44,7 +44,7 @@ export default async function fetchProjects() {
           },
         ],
         img:
-          "https://raw.githubusercontent.com/phr-nk/master/DTHackathon/DTHackathonSubmission-ArticleArchitectv2.gif",
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/DTHackathon/DTHackathonSubmission-ArticleArchitectv2.gif",
         tags: [{ name: "ServiceNow", color: "green" }],
       },
        {
@@ -65,7 +65,7 @@ export default async function fetchProjects() {
           },
         ],
         img:
-          "https://raw.githubusercontent.com/phr-nk/master/DisasterWorkspace/dashboard.JPG",
+          "https://raw.githubusercontent.com/phr-nk/Storage/master/DisasterWorkspace/dashboard.JPG",
         tags: [{ name: "ServiceNow", color: "green" }],
       },
       {
